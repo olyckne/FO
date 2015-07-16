@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/olyckne/FO.svg)](https://travis-ci.org/olyckne/FO)
 [![Coverage Status](https://coveralls.io/repos/olyckne/FO/badge.svg?branch=master&service=github)](https://coveralls.io/github/olyckne/FO?branch=master)
 
 # FO
