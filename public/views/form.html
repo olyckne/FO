@@ -1,0 +1,54 @@
+<div class="page-header">
+    <h1>Sometimes you just want to tell people to fuck off!</h1>
+    <small>
+        <em class="text-muted">
+            Powered by the awesome 
+                <a target="_blank" href="http://www.foaas.com">foaas.com</a>
+        </em>
+    </small>
+</div>    
+
+
+<div class="row">
+    <div class="col-sm-6">
+    <form class="form">
+        <div class="form-group">
+        <label for="operation">Type of fuck off:</label>
+            <select class="form-control" id="operation" name="operation" ng-model="selectedOperation"
+                ng-options="operation.name for operation in operations"
+                ng-change="getOperationsFields()"></select>
+        </div>
+
+        <div class="fuck-off-inputs" bind-html-compile="operationFields">
+            
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="shout">
+                Fucking scream it?
+            </label>
+        </div>
+    </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        
+            <p ng-hide="fuckOff.message">
+                Waiting to fuck off...
+            </p>
+            <blockquote ng-show="fuckOff.message" ng-class="{to_uppercase: shout}">
+                <p ng-show="fields" bind-html-compile="message"></p>
+                <footer ng-show="fields" bind-html-compile="subtitle"></footer>
+            </blockquote>
+        
+        
+        <div class="share" ng-show="fuckOff.message">
+            <p>
+                Send <a ng-href="{{getShareLink()}}">a link</a> to your lovely friend:
+            </p>
+            <input class="form-control" type="text" value="{{getShareLink()}}" readonly select-on-click>
+            
+        </div>
+    </div>
+</div>

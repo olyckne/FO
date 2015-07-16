@@ -1,0 +1,28 @@
+{
+  "name": "fo.olyck.net",
+  "version": "1.0.0",
+  "authors": [
+    "Mattias Lyckne <mattias@lyckne.se>"
+  ],
+  "description": "A user interface for FOAAS",
+  "license": "MIT",
+  "homepage": "fo.olyck.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "bootstrap": "~3.3.4",
+    "angular-ui-router": "~0.2.15",
+    "angular-sanitize": "~1.4.0",
+    "angular-bind-html-compile": "~1.0.1",
+    "angular-animate": "~1.4.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.0"
+  }
+}
