@@ -6,7 +6,9 @@ before_script:
     - npm install
     - npm install coveralls
     - bower install
-    - gulp --production
+    - gulp bower
+    - gulp styles --production
+    - gulp scripts --production
 
 after_success:
   - cat coverage/**/lcov.info ./node_modules/coveralls/bin/coveralls.js
