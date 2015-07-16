@@ -2,11 +2,11 @@ sudo: false
 language: node_js
 
 before_script:
-    npm install --global gulp bower
-    npm install
-    npm install coveralls
-    bower install
-    gulp --production
+    - npm install --global gulp bower
+    - npm install
+    - npm install coveralls
+    - bower install
+    - gulp --production
 
 after_success:
   - cat coverage/**/lcov.info ./node_modules/coveralls/bin/coveralls.js
