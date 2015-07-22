@@ -6,7 +6,7 @@ angular.module('app')
             var focusedElement;
             element.on('click', function () {
                 if (focusedElement != this) {
-                    this.select();
+                    this.setSelectionRange(0, this.value.length);
                     focusedElement = this;
                 }
             });
