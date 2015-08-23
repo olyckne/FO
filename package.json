@@ -1,4 +1,16 @@
 {
+  "name": "fo.olyck.net",
+  "description": "A user friendly generator for foaas.com",
+  "author": "Mattias Lyckne <mattias@lyckne.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olyckne/fo/issues"
+  },
+  "homepage": "http://fo.olyck.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olyckne/fo.git"
+  },
   "devDependencies": {
     "gulp": "^3.8.8",
     "jasmine-core": "^2.3.4",
